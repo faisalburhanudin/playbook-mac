@@ -1,0 +1,9 @@
+[user]
+    name = {{ git.personal.name }}
+    email = {{ git.personal.email }}
+
+[core]
+    excludesfile = ~/.gitignore
+
+[url "git@gitlab.com:"]
+    insteadOf = https://gitlab.com/
