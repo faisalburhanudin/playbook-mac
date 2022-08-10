@@ -11,10 +11,10 @@
     src: "templates/{{ item.name }}"
     dest: "{{ item.dest }}"
   loop:
-    - { name: ".zshrc", dest: "{{ home }}" }
-    - { name: ".zshenv", dest: "{{ home }}" }
+    - { name: ".zshrc", dest: "{{ home }}/" }
+    - { name: ".zshenv", dest: "{{ home }}/" }
     - { name: "starship.toml", dest: "{{ home }}/.config/" }
-    - { name: ".gitignore", dest: "{{ home }}" }
-    - { name: ".tmux.conf", dest: "{{ home }}" }
-    - { name: ".gitconfig", dest: "{{ home }}" }
-    - { name: "alacrtitty.toml", dest: "{{ home }}/.config/alacritty/" }
+    - { name: ".gitignore", dest: "{{ home }}/" }
+    - { name: ".tmux.conf", dest: "{{ home }}/" }
+    - { name: ".gitconfig", dest: "{{ home }}/" }
+    - { name: "alacritty.yaml", dest: "{{ home }}/.config/alacritty/" }

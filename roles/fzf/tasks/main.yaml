@@ -1,0 +1,4 @@
+- name: "setup keybinding and fuzzy completion"
+  shell: 'echo "y" |  /opt/homebrew/opt/fzf/install --key-bindings --completion'
+  args:
+    creates: "{{ home }}/.fzf.zsh"
