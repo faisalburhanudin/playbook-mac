@@ -1,0 +1,12 @@
+% conda
+
+# env create
+conda create --name <name> python=<python_version>
+
+# env list
+conda env list
+
+# env remove
+conda env remove --name <conda_env_list>
+
+$conda_env_list: conda env list | awk '{ print $1 }' | tail -n +3

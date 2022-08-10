@@ -1,0 +1,4 @@
+% redis
+
+# delete by keys
+redis-cli -h <host> KEYS "<key>" | xargs redis-cli -h <host> DEL

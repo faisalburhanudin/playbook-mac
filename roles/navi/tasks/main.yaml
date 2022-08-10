@@ -1,0 +1,14 @@
+- name: "ensure navi cheat sheet exist"
+  file:
+    path: "{{ home }}/Library/Application Support/navi/cheats"
+    state: directory
+
+
+- name: "copy cheat"
+  template:
+    src: "templates/{{ item }}"
+    dest: "{{ home }}/Library/Application Support/navi/cheats"
+  loop:
+    - "conda.cheat"
+    - "git.cheat"
+    - "redis.cheat"
