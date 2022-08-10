@@ -1,0 +1,1 @@
+.venv/bin/ansible-playbook main.yaml -i 192.168.0.175, -e 'ansible_python_interpreter=/usr/bin/python3'

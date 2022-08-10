@@ -1,0 +1,11 @@
+- name: create directory destination
+  file:
+    path: "{{ item.dest }}"
+    state: directory
+  loop: "{{ config }}"
+
+- name: copy config
+  template:
+    src: "templates/{{ item.name }}"
+    dest: "{{ item.dest }}"
+  loop: "{{ config }}"
