@@ -1,6 +1,6 @@
 [user]
-    name = {{ name }}
-    email = {{ email }}
+    name = {{ personal.name }}
+    email = {{ personal.email }}
 
 [core]
     excludesfile = ~/.gitignore

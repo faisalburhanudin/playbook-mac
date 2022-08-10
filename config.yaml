@@ -1,6 +1,8 @@
 home: /Users/faisal
-name: faisalburhanudin
-email: faisalburhanudin@gmail.com
+
+personal:
+  name: faisalburhanudin
+  email: faisalburhanudin@gmail.com
 
 dotfiles:
   - { name: .zshrc, dest: "{{ home }}" }
