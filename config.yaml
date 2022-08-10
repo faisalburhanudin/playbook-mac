@@ -1,0 +1,8 @@
+home: /Users/faisal
+
+dotfiles:
+  - { name: .zshrc, dest: "{{ home }}" }
+  - { name: starship.toml, dest: "{{ home }}/.config/" }
+  - { name: .gitignore, dest: "{{ home }}" }
+  - { name: .tmux.conf, dest: "{{ home }}" }
+  - { name: .gitconfig, dest: "{{ home }}" }
