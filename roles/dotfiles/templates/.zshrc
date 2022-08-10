@@ -1,21 +1,13 @@
-# homebrew need to be first so I can use homebrew bin, in this config
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # open command using ^b
 autoload edit-command-line
 zle -N edit-command-line
 bindkey '^b' edit-command-line
 
 export EDITOR=nvim
-export GOPATH={{ home }}/workspace
 
 alias z=zoxide
 alias lg='lazygit'
 alias .=source
-
-export PATH=zopt/gnu-tar/libexec/gnubin:$PATH
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-export PATH=$PATH:$HOME/.local/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(/opt/homebrew/bin/brew shellenv)"
