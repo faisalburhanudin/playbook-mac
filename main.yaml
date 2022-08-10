@@ -3,4 +3,4 @@
   vars_files:
     - config.yaml
   roles:
-    - config
+    - dotfiles

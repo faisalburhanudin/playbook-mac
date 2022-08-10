@@ -1,4 +1,6 @@
 home: /Users/faisal
+name: faisalburhanudin
+email: faisalburhanudin@gmail.com
 
 dotfiles:
   - { name: .zshrc, dest: "{{ home }}" }
@@ -6,3 +8,4 @@ dotfiles:
   - { name: .gitignore, dest: "{{ home }}" }
   - { name: .tmux.conf, dest: "{{ home }}" }
   - { name: .gitconfig, dest: "{{ home }}" }
+

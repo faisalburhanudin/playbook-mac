@@ -2,10 +2,10 @@
   file:
     path: "{{ item.dest }}"
     state: directory
-  loop: "{{ config }}"
+  loop: "{{ dotfiles }}"
 
 - name: copy dotfiles
   template:
     src: "templates/{{ item.name }}"
     dest: "{{ item.dest }}"
-  loop: "{{ config }}"
+  loop: "{{ dotfiles }}"
