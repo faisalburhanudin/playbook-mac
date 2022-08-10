@@ -3,12 +3,3 @@ home: /Users/faisal
 personal:
   name: faisalburhanudin
   email: faisalburhanudin@gmail.com
-
-dotfiles:
-  - { name: .zshrc, dest: "{{ home }}" }
-  - { name: .zshenv, dest: "{{ home }}" }
-  - { name: starship.toml, dest: "{{ home }}/.config/" }
-  - { name: .gitignore, dest: "{{ home }}" }
-  - { name: .tmux.conf, dest: "{{ home }}" }
-  - { name: .gitconfig, dest: "{{ home }}" }
-

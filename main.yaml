@@ -4,5 +4,6 @@
     - config.yaml
   roles:
     - dotfiles
+    - homebrew
     - navi
     - secretrole

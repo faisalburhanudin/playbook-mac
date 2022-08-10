@@ -1,11 +1,20 @@
-- name: create directory destination
+- name: "create directory destination"
   file:
-    path: "{{ item.dest }}"
-    state: directory
-  loop: "{{ dotfiles }}"
+    path: "{{ item }}"
+    state: "directory"
+  loop:
+    - "{{ home }}/.config/"
+    - "{{ home }}/.config/alacritty"
 
-- name: copy dotfiles
+- name: "copy dotfiles"
   template:
     src: "templates/{{ item.name }}"
     dest: "{{ item.dest }}"
-  loop: "{{ dotfiles }}"
+  loop:
+    - { name: ".zshrc", dest: "{{ home }}" }
+    - { name: ".zshenv", dest: "{{ home }}" }
+    - { name: "starship.toml", dest: "{{ home }}/.config/" }
+    - { name: ".gitignore", dest: "{{ home }}" }
+    - { name: ".tmux.conf", dest: "{{ home }}" }
+    - { name: ".gitconfig", dest: "{{ home }}" }
+    - { name: "alacrtitty.toml", dest: "{{ home }}/.config/alacritty/" }

@@ -1,0 +1,12 @@
+font:
+  normal:
+    family: Hack Nerd Font
+
+  size: 12
+
+# need to map right left keybinding to move between word
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left,  mods: Alt, chars: "\x1BB" }
+  - {key: N, mods: Command, action: CreateNewWindow}
+
