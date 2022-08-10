@@ -4,7 +4,7 @@
     state: directory
   loop: "{{ config }}"
 
-- name: copy config
+- name: copy dotfiles
   template:
     src: "templates/{{ item.name }}"
     dest: "{{ item.dest }}"
