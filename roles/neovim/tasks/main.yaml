@@ -1,0 +1,9 @@
+- name: "ensure packer install"
+  shell: "git clone --depth 1 https://github.com/wbthomason/packer.nvim {{ home }}/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  args:
+    creates: "{{ home }}/.local/share/nvim/site/pack/packer/start/packer.nvim"
+
+- name: "copy config"
+  template:
+    src: "templates/init.lua"
+    dest: "{{ home }}/.config/nvim/"
