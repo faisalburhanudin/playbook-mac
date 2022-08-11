@@ -1,9 +1,0 @@
-[user]
-    name = {{ personal.name }}
-    email = {{ personal.email }}
-
-[core]
-    excludesfile = ~/.gitignore
-
-[url "git@gitlab.com:"]
-    insteadOf = https://gitlab.com/

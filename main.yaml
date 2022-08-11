@@ -3,9 +3,9 @@
   vars_files:
     - config.yaml
   roles:
-#    - dotfiles
-#    - homebrew
-#    - navi
-#    - fzf
+    - dotfiles
+    - homebrew
+    - navi
+    - fzf
     - neovim
-#    - secretrole
+    - secretrole

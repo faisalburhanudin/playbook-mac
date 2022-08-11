@@ -16,5 +16,4 @@
     - { name: "starship.toml", dest: "{{ home }}/.config/" }
     - { name: ".gitignore", dest: "{{ home }}/" }
     - { name: ".tmux.conf", dest: "{{ home }}/" }
-    - { name: ".gitconfig", dest: "{{ home }}/" }
     - { name: "alacritty.yaml", dest: "{{ home }}/.config/alacritty/" }
