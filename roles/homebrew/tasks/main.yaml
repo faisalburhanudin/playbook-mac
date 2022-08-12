@@ -51,4 +51,5 @@
       - "discord"
       - "figma"
       - "docker"
+      - "todoist"
     state: "present"
