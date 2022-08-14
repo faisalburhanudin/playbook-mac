@@ -1,3 +1,0 @@
-[submodule "roles/secret-role"]
-	path = roles/secret-role
-	url = git@github.com:faisalburhanudin/secret-role.git
