@@ -52,4 +52,5 @@
       - "figma"
       - "docker"
       - "todoist"
+      - "slack"
     state: "present"
