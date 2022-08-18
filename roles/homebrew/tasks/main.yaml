@@ -41,7 +41,6 @@
 - name: "ensure homebrew cask installed"
   community.general.homebrew_cask:
     name:
-      - "miniforge"
       - "font-hack-nerd-font"
       - "spotify"
       - "google-cloud-sdk"
