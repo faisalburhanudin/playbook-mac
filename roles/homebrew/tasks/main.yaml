@@ -35,6 +35,7 @@
       - "yq"
       - "zoxide"
       - "zsh-autosuggestions"
+      - "gh"  # GitHub client
 
     state: "present"
 
