@@ -36,6 +36,7 @@
       - "zoxide"
       - "zsh-autosuggestions"
       - "gh"  # GitHub client
+      - "jc"  # convert anything to json
 
     state: "present"
 
