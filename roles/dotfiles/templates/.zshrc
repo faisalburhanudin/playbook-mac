@@ -19,9 +19,12 @@ eval "$(navi widget zsh)"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
+# load groovy
+export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
+
+# load zshrc rg
+source {{ home }}/.zshrc-rg
+
 # load zsh auto autosuggestions
 # should be in the end of config
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# load groovy
-export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
