@@ -54,4 +54,6 @@
       - "docker"
       - "todoist"
       - "slack"
+      - "whatsapp"
+      - "zoom"
     state: "present"
