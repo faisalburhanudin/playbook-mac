@@ -1,0 +1,8 @@
+- name: "ensure custom.java.security file exist"
+  copy:
+    src: "templates/custom.java.security"
+    dest: "{{ home }}/custom.java.security"
+
+# 1. removed TLSv1 from the list.
+# 2. Go to you data source Advanced tab and add
+#      VM Options: -Djava.security.properties=/Users/faisal/custom.java.security

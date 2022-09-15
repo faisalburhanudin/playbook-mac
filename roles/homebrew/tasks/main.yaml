@@ -39,6 +39,8 @@
       - "jc"  # convert anything to json
       - "node"  # node.js
       - "yarn"  # node.js package manager
+      - "watch"
+      - "mysql-client"  # rogu need mysql client to get secret
 
     state: "present"
 
@@ -59,4 +61,5 @@
       - "whatsapp"
       - "zoom"
       - "spectacle"  # easy window manager
+      - "postman"
     state: "present"
