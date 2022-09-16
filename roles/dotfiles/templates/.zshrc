@@ -1,3 +1,6 @@
+# enable comment in interactive shell
+setopt interactive_comments
+
 # open command using ^b
 autoload edit-command-line
 zle -N edit-command-line
