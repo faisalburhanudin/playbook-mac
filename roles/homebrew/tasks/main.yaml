@@ -4,6 +4,7 @@
     creates: "/opt/homebrew/Library/Taps/homebrew/{{ item | replace('/', '-') }}"
   loop:
     - "homebrew/cask-fonts"
+    - "leoafarias/fvm"
 
 - name: "ensure homebrew library installed"
   community.general.homebrew:
@@ -41,6 +42,7 @@
       - "yarn"  # node.js package manager
       - "watch"
       - "mysql-client"  # rogu need mysql client to get secret
+      - "fvm"  #flutter manager
 
     state: "present"
 
@@ -62,4 +64,5 @@
       - "zoom"
       - "spectacle"  # easy window manager
       - "postman"
+      - "another-redis-desktop-manager"
     state: "present"
