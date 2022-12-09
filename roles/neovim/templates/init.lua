@@ -9,12 +9,6 @@ require('packer').startup(function(use)
     -- package manager
     use 'wbthomason/packer.nvim'
 
-    -- syntax highlight
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
-
     -- theme
     use 'folke/tokyonight.nvim'
 
@@ -27,15 +21,6 @@ require('packer').startup(function(use)
     }
 end)
 
--- treesitter configuration
-require 'nvim-treesitter.configs'.setup {
-
-    -- A list of parser names, or "all"
-    ensure_installed = { "comment", "lua" },
-
-    -- Automatically install missing parsers when entering buffer
-    auto_install = true,
-}
 
 -- lsp config
 -- after the language server attaches to the current buffer

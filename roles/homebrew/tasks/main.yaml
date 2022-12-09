@@ -32,7 +32,6 @@
       - "tmux"
       - "tree"
       - "wget"
-      - "youtube-dl"
       - "yq"
       - "zoxide"
       - "zsh-autosuggestions"
@@ -43,6 +42,7 @@
       - "watch"
       - "mysql-client"  # rogu need mysql client to get secret
       - "fvm"  #flutter manager
+      - "yt-dlp"  # for download youtube
 
     state: "present"
 
