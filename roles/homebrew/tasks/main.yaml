@@ -4,7 +4,6 @@
     creates: "/opt/homebrew/Library/Taps/homebrew/{{ item | replace('/', '-') }}"
   loop:
     - "homebrew/cask-fonts"
-    - "leoafarias/fvm"
 
 - name: "ensure homebrew library installed"
   community.general.homebrew:
