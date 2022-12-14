@@ -2,3 +2,6 @@
 
 # cancel last commit
 git reset --soft HEAD~1
+
+# update branch
+git pull

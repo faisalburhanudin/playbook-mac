@@ -42,7 +42,7 @@
       - "watch"
       - "mysql-client"  # rogu need mysql client to get secret
       - "fvm"  #flutter manager
-      - "yt-dlp"  # for download youtube
+      - "yt-dlp"  # for download YouTube
 
     state: "present"
 
